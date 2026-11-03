@@ -6,8 +6,6 @@
 #include <bn_sprite_ptr.h>
 #include <bn_vector.h>
 
-#include "bn_sprite_items_dot.h"
-#include "bn_sprite_items_square.h"
 #include "movement.h"
 #include "Center.h"
 #include "Orbiter.h"

@@ -1,13 +1,13 @@
 #include "Orbiter.h"
 #include <bn_fixed_point.h>
 #include <bn_sprite_ptr.h>
-#include "bn_sprite_items_dot.h"
+#include "bn_sprite_items_newdot.h"
 
 // A scaling factor by which to reduce the force applied when orbiting
 // Important for numerical stability
 static constexpr bn::fixed FORCE_SCALE = 10;
 
-Orbiter::Orbiter(bn::fixed_point starting_location, bn::fixed_point starting_velocity, Center &center) : _sprite(bn::sprite_items::dot.create_sprite(starting_location)),
+Orbiter::Orbiter(bn::fixed_point starting_location, bn::fixed_point starting_velocity, Center &center) : _sprite(bn::sprite_items::newdot.create_sprite(starting_location)),
                                                                                                          _velocity(starting_velocity),
                                                                                                          _center(center)
 {
