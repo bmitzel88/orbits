@@ -9,9 +9,8 @@ static constexpr bn::fixed FORCE_SCALE = 10;
 
 Orbiter::Orbiter(bn::fixed_point starting_location, bn::fixed_point starting_velocity, Center &center) : _sprite(bn::sprite_items::newdot.create_sprite(starting_location)),
                                                                                                          _velocity(starting_velocity),
-                                                                                                         _center(center)
-{
-}
+                                                                                                         _center(center) {
+                                                                                                         };
 
 void Orbiter::update()
 {
