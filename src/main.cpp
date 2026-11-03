@@ -10,10 +10,7 @@
 #include "bn_sprite_items_square.h"
 #include "movement.h"
 #include "Center.h"
-
-// A scaling factor by which to reduce the force applied when orbiting
-// Important for numerical stability
-static constexpr bn::fixed FORCE_SCALE = 10;
+#include "Orbiter.h"
 
 // Maximum number of orbiters allowed on the screen
 static constexpr int MAX_ORBITERS = 30;
@@ -21,8 +18,6 @@ static constexpr int MAX_ORBITERS = 30;
 // Default starting posiiton and velocity for Orbiter
 static constexpr bn::fixed_point ORBITER_START_POSIITON = {0, 0};
 static constexpr bn::fixed_point ORBITER_START_VELOCITY = {0, 5};
-
-
 
 int main()
 {
